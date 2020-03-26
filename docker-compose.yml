@@ -12,6 +12,9 @@ services:
     ports:
       - 80:80
       - 92:92
+    networks:
+      - frontend
+      - backend      
 
   odfe-node1:
     image: amazon/opendistro-for-elasticsearch:1.4.0
@@ -41,6 +44,8 @@ services:
     ports:
       - 9200:9200
       - 9600:9600 # required for Performance Analyzer
+    networks:
+      - backend      
       
   kibana:
     depends_on:
@@ -54,6 +59,8 @@ services:
     environment:
       ELASTICSEARCH_URL: https://odfe-node1:9200
       ELASTICSEARCH_HOSTS: https://odfe-node1:9200
+    networks:
+      - backend
   
 volumes:
   odfe-data1: {}
