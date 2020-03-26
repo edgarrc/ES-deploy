@@ -10,6 +10,8 @@ You can add nodes on your cluster or fine tune the parameters easly. Reffer to t
 
 ## Installing
 
+Kibana and ES requires at last 4GB RAM avaiable (you can add a 4GB swap).
+
 ```
 git clone https://github.com/edgarrc/ES-deploy.git
 cd ES-deploy
@@ -37,6 +39,8 @@ docker-compose up -d
 ```
 
 ## Using
+
+Wait at least 5 minutes after startup before using
 
 - Kibana http port 80: http://yourhost
 - Elasticsearch http port 92 : http://yourhost:92
