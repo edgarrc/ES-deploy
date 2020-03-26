@@ -57,4 +57,4 @@ services:
   
 volumes:
   odfe-data1: {}
-  nginx-sites: ~/nginx/sites-enabled
+  nginx-sites:~/nginx/sites-enabled
