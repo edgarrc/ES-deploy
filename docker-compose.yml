@@ -57,9 +57,4 @@ services:
   
 volumes:
   odfe-data1: {}
-  nginx-sites:
-    driver: local
-    driver_opts:
-      o: bind
-      type: none
-      device: ~/nginx/sites-enabled
+  nginx-sites: ~/nginx/sites-enabled
