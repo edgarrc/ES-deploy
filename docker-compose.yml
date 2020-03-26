@@ -56,5 +56,5 @@ services:
       ELASTICSEARCH_HOSTS: https://odfe-node1:9200
 
 volumes:
-  nginx-data: ./nginx/sites-enabled
+  nginx-data: nginx/sites-enabled
   odfe-data1: {}
