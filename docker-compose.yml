@@ -9,8 +9,6 @@ services:
        context: ./nginx
        dockerfile: Dockerfile
     container_name: nginx
-    volumes:
-      - nginx-sites:/etc/nginx/sites-enabled
     ports:
       - 81:81
       - 82:82
@@ -59,4 +57,3 @@ services:
   
 volumes:
   odfe-data1: {}
-  nginx-sites: {}
