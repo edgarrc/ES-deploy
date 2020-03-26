@@ -8,7 +8,7 @@ services:
     image: nginx:1.13.3
     container_name: nginx
     volumes:
-      - nginx-data:/etc/nginx/conf.d
+      - nginx/sites-enabled:/etc/nginx/conf.d
     ports:
       - 81:81
       - 82:82
@@ -56,5 +56,4 @@ services:
       ELASTICSEARCH_HOSTS: https://odfe-node1:9200
 
 volumes:
-  nginx-data: nginx/sites-enabled
   odfe-data1: {}
