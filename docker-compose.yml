@@ -10,6 +10,7 @@ services:
        dockerfile: Dockerfile
     container_name: nginx
     ports:
+      - 80:80
       - 81:81
       - 82:82
 
