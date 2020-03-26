@@ -64,3 +64,7 @@ services:
   
 volumes:
   odfe-data1: {}
+  
+networks:
+  frontend:
+  backend:  
