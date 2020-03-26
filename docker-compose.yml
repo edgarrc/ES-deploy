@@ -5,7 +5,7 @@ services:
     depends_on:
        - odfe-node1
        - kibana
-    image: amazon/opendistro-for-elasticsearch:1.4.0
+    image: nginx:1.13.3
     container_name: nginx
     volumes:
       - nginx-data:/etc/nginx/conf.d
