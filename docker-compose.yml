@@ -54,7 +54,12 @@ services:
     environment:
       ELASTICSEARCH_URL: https://odfe-node1:9200
       ELASTICSEARCH_HOSTS: https://odfe-node1:9200
-
+  
 volumes:
-  nginx-sites: /sites-enabled
   odfe-data1: {}
+  nginx-sites:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ./nginx/sites-enabled
