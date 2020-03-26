@@ -11,8 +11,7 @@ services:
     container_name: nginx
     ports:
       - 80:80
-      - 81:81
-      - 82:82
+      - 9200:9200
 
   odfe-node1:
     image: amazon/opendistro-for-elasticsearch:1.4.0
