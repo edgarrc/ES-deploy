@@ -8,7 +8,7 @@ services:
     image: nginx:1.13.3
     container_name: nginx
     volumes:
-      - nginx-sites:/etc/nginx/conf.d
+      - nginx-sites:/etc/nginx/sites-enabled
     ports:
       - 81:81
       - 82:82
@@ -62,4 +62,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: $(pwd)/nginx/sites-enabled
+      device: ./nginx/sites-enabled
