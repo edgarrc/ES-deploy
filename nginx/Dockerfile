@@ -1,4 +1,4 @@
 FROM nginx:1.16
-COPY ./elasticsearch /etc/nginx/sites-enabled/elasticsearch
-COPY ./kibana /etc/nginx/sites-enabled/kibana
-EXPOSE 81 82
+COPY ./elasticsearch /etc/nginx/conf.d/elasticsearch.conf
+COPY ./kibana /etc/nginx/conf.d/kibana.conf
+EXPOSE 80 81 82
