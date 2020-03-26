@@ -16,19 +16,19 @@ cd ES-deploy
 docker-compose up -d
 ```
 
-If you make changes, then run:
+If you make any changes, then run the following command to rebuild
 
 ```
 docker-compose build
 ```
 
-or 
+Or 
 
 ```
  docker-compose up --build
 ```
 
-or if you are on a test enviroment and want to make sure it is everything fine before deployment
+Or if you are on a test enviroment and want to make sure everything is clear and fine before deployment
 
 ```
 docker-compose down
