@@ -62,4 +62,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: ./nginx/sites-enabled
+      device: $(pwd)/nginx/sites-enabled
