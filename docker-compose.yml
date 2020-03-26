@@ -5,7 +5,9 @@ services:
     depends_on:
        - odfe-node1
        - kibana
-    image: nginx:1.13.3
+    build:
+       context: ./nginx
+       dockerfile: Dockerfile
     container_name: nginx
     volumes:
       - nginx-sites:/etc/nginx/sites-enabled
