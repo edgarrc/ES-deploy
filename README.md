@@ -1,6 +1,6 @@
 # ES-deploy
 
-This docker-compose project has Elasticsearch and Kibana as backend and Nginx as frontend, it is a base configuration for your production enviroment with a fast setup.
+This docker-compose project has Elasticsearch and Kibana as backend with Nginx as frontend. It is a base configuration for your production enviroment with a fast setup.
 
 - Kibana http port 80
 - Elasticsearch http port 92
