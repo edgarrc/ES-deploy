@@ -31,6 +31,10 @@ services:
       - http.port=9200
       - network.host=0.0.0.0
       
+      #- discovery.type=single-node
+      #- http.host=0.0.0.0
+      #- discovery.zen.minimum_master_nodes: 2      
+      
       - cluster.initial_master_nodes=odfe-node1
     ulimits:
       memlock:
