@@ -10,7 +10,7 @@ You can add nodes on your cluster or fine tune the parameters easly. Reffer to t
 
 ## Installing
 
-Kibana and ES requires at last 4GB RAM avaiable (you can add a 4GB swap).
+Kibana and ES requires at last 4GB RAM avaiable (add a 5GB swap).
 
 ```
 git clone https://github.com/edgarrc/ES-deploy.git
